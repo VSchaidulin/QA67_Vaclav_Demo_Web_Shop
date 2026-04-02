@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+
 public class CreateAccountRegisterTests extends TestBase {
     @Test(enabled = false)
     public void newUserRegisterPositiveTest(){
