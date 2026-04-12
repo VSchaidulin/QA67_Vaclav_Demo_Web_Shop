@@ -10,27 +10,30 @@ public class CreateAccountRegisterTests extends TestBase {
     public void newUserRegisterPositiveTest(){
         int i = (int) ((System.currentTimeMillis()/1000)%3600);
 
-        clickOnRegisterLink();
+        String email = "vaclav2026" + System.currentTimeMillis() + "@gmx.de";
 
-        fillLoginRegisterForm("Wasja", "Pipetkin", "Aa12345!", "Aa12345!");
-        type(By.name("Email"), "vaclav2026" + i + "@gmx.de");
+        app.getUser().register("Wasja", "Pipetkin", email, "Aa12345!");
 
-        click(By.id("register-button"));
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        Assert.assertTrue(isElementPresent(By.className("result")));
+        Assert.assertTrue(
+                app.getBase().isElementPresent(By.className("result"))
+        );
+
+
     }
 
     @Test
     public void existedUserRegisterNegativeTest(){
-        clickOnRegisterLink();
 
-        fillLoginRegisterForm("Wasja", "Pipetkin", "Aa12345!", "Aa12345!");
-        type(By.name("Email"), "vaclav2026@gmx.de");
-
-        click(By.id("register-button"));
+        app.getUser().register("Wasja", "Pipetkin", "vaclav2026@gmx.de", "Aa12345!");
 
         Assert.assertTrue(
-                isElementPresent(By.cssSelector(".validation-summary-errors"))
+                app.getBase().isElementPresent(By.cssSelector(".validation-summary-errors"))
         );
     }
 }
