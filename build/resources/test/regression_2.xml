@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression_2" verbose="1">
+    <test name="Negative">
+        <classes>
+            <class name="com.qa67el.tests.HomePageTests"/>
+            <class name="com.qa67el.tests.ItemTests"/>
+            <class name="com.qa67el.tests.CreateAccountRegisterTests">
+                <methods>
+                    <exclude name=".*Positive.*"></exclude>
+                </methods>
+            </class>
+            <class name="com.qa67el.tests.LoginTests">
+                <methods>
+                    <exclude name=".*Positive.*"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

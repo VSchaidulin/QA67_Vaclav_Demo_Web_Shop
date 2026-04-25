@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.qa67el.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-15T11:34:47.913Z" hostname="VACLAV" time="11.084">
+  <properties/>
+  <testcase name="loginNegativeTest" classname="com.qa67el.tests.LoginTests" time="11.084"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Apr 15, 2026 1:34:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+]]></system-err>
+</testsuite>

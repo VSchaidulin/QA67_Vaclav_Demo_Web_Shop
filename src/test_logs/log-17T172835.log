@@ -1,0 +1,9 @@
+922  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\vacla\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+1514 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 147.0.7727.57 (resolved driver for Chrome 147)
+1529 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\vacla\.cache\selenium\chromedriver\win64\147.0.7727.57\chromedriver.exe
+4536 [main] INFO  com.qa67el.core.TestBase -- Start test addItemToCartTest with data: []
+6737 [main] INFO  com.qa67el.core.TestBase -- PASSED: addItemToCartTest
+6737 [main] INFO  com.qa67el.core.TestBase -- Stop test
+6737 [main] INFO  com.qa67el.core.TestBase -- *****************************
