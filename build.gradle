@@ -13,6 +13,7 @@ dependencies {
     implementation("org.seleniumhq.selenium:selenium-java:4.41.0")
     implementation("org.testng:testng:7.12.0")
     implementation("io.github.bonigarcia:webdrivermanager:6.3.3")
+    implementation("ch.qos.logback:logback-classic:1.5.32")
 
 }
 
@@ -45,4 +46,4 @@ def registerTask(String taskName,String suitePath){
 }
 registerTask('quick','src/test/resources/testng.xml')
 registerTask('regression','src/test/resources/regression.xml')
-registerTask('regression_2','src/test/resources/regression_2.xml')
+
